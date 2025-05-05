@@ -9,9 +9,8 @@ Cтворіть новий масив, який міститиме лише па
 Виведіть отриманий масив парних чисел на консоль.
  */
 
-
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const evenNumbersArray = array.filter((numb) => numb % 2 === 0);
 const oddNumbersArray = array.filter((numb) => numb % 2 != 0);
-console.log("Even numbers present in array:", evenNumbersArray);
-console.log("Odd numbers present in array:", oddNumbersArray);
+console.log('Even numbers present in array:', evenNumbersArray);
+console.log('Odd numbers present in array:', oddNumbersArray);

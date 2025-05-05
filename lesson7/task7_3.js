@@ -11,35 +11,34 @@
 Огорніть кожен окремий виклик функції divide в try…catch.
 Використовуючи блок finally, виведіть повідомлення "Робота завершена" в консоль, навіть якщо помилка виникла або не виникла. */
 
-
 function divide(numerator, denominator) {
-    if (denominator === 0) {
-        throw new Error("Invalid input: denominator can't be zero");
-    }
-    if (typeof numerator !== 'number' || typeof denominator !== 'number') {
-        throw new Error("Invalid input: one of variables is not a numbers.")
-    }
-    const result = numerator / denominator;
-    return result;
+	if (denominator === 0) {
+		throw new Error("Invalid input: denominator can't be zero");
+	}
+	if (typeof numerator !== 'number' || typeof denominator !== 'number') {
+		throw new Error('Invalid input: one of variables is not a numbers.');
+	}
+	const result = numerator / denominator;
+	return result;
 }
 try {
-    console.log(divide(150, 3)); 
+	console.log(divide(150, 3));
 } catch (error) {
-    console.log(error.message);
+	console.log(error.message);
 } finally {
-    console.log("Calculation is done");
+	console.log('Calculation is done');
 }
 try {
-    console.log(divide(150, 0));  
+	console.log(divide(150, 0));
 } catch (error) {
-    console.log(error.message); 
+	console.log(error.message);
 } finally {
-    console.log("Action is done. Calculation can't be performed due to invalid input");
+	console.log("Action is done. Calculation can't be performed due to invalid input");
 }
 try {
-    console.log(divide(150, 'string')); 
+	console.log(divide(150, 'string'));
 } catch (error) {
-    console.log(error.message); 
+	console.log(error.message);
 } finally {
-    console.log("Action is done. Calculation can't be performed due to invalid input");
+	console.log("Action is done. Calculation can't be performed due to invalid input");
 }

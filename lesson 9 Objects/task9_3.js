@@ -11,14 +11,14 @@ owner: число, представляє рік випуску автомобі
 Виведіть об'єкт car3 в консоль. */
 
 const car1 = {
-    brand: "Honda",
-    model: "Civic",
-    year: 2007
+	brand: 'Honda',
+	model: 'Civic',
+	year: 2007,
 };
 const car2 = {
-    brand: "Honda",
-    model: "Civic",
-    owner: "Serhii"
+	brand: 'Honda',
+	model: 'Civic',
+	owner: 'Serhii',
 };
 const car3 = { ...car1, ...car2 };
-console.log(car3)
+console.log(car3);

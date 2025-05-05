@@ -10,18 +10,17 @@ ordered - кількість одиниць товару в замовленні
 
 У разі якщо товарів на складі вистачає — повернути рядок з повідомленням - “Your order is accepted” */
 
-
 const checkOrder = function (quantityAvailable, quantityOrdered) {
-    if (quantityOrdered <=0) {
-        return "Your cart is empty";
-    } else if (quantityOrdered > quantityAvailable) {
-        return "Ordered quantity is too big, requested amount is not available on our stock.";
-    } else {
-        return "Your order is accepted";
-    }
+	if (quantityOrdered <= 0) {
+		return 'Your cart is empty';
+	} else if (quantityOrdered > quantityAvailable) {
+		return 'Ordered quantity is too big, requested amount is not available on our stock.';
+	} else {
+		return 'Your order is accepted';
+	}
 };
 const quantityAvailable = 1000;
 const quantityOrdered = -6;
 const result = checkOrder(quantityAvailable, quantityOrdered);
 
-console.log(result); 
+console.log(result);
