@@ -13,5 +13,3 @@
 const numbersArray = [10, 20, 30, 40, 50, 60, 70];
 const sumArraysNumbers = numbersArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 console.log(sumArraysNumbers);
-
-

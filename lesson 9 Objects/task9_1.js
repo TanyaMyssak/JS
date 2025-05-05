@@ -8,9 +8,9 @@ courses: масив, представляє список курсів, які в
 Виведіть об'єкт student в консоль. */
 
 const student = {
-    firstName: "John",
-    lastName: "Smith",
-    age: 22,
-    courses: ["ISTQB", "Manual testing", "Automated testing "]
+	firstName: 'John',
+	lastName: 'Smith',
+	age: 22,
+	courses: ['ISTQB', 'Manual testing', 'Automated testing '],
 };
-console.log(student)
+console.log(student);

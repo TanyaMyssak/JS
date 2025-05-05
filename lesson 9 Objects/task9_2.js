@@ -7,9 +7,9 @@ year: число, представляє рік видання книги.
 Виведіть деструктуризовані змінні в консоль */
 
 const book = {
-    title: "Going Postal",
-    author: "Terry Pratchett",
-    year: 2004
+	title: 'Going Postal',
+	author: 'Terry Pratchett',
+	year: 2004,
 };
-const { title, author } = book
-console.log(title, "by", author)
+const { title, author } = book;
+console.log(title, 'by', author);

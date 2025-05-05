@@ -3,8 +3,8 @@
 Функція повинна вивести в консоль переданий текст через вказану кількість мілісекунд */
 
 function learningPromises(string, timeMlSec) {
-    setTimeout(function(){
-        console.log(string); 
-    }, timeMlSec);
+	setTimeout(function () {
+		console.log(string);
+	}, timeMlSec);
 }
-learningPromises ("Delayed output", 2000)
+learningPromises('Delayed output', 2000);

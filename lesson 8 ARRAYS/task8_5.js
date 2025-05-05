@@ -8,7 +8,7 @@
 Створіть новий масив, який містить всі елементи з обох вихідних масивів.
 /* /* Виведіть отриманий об'єднаний масив на консоль. */
 
-const firstNameArray = ["Саша", "Петя"];
-const lastNameArray = ["Сидоренко", "Петренко"];
+const firstNameArray = ['Саша', 'Петя'];
+const lastNameArray = ['Сидоренко', 'Петренко'];
 const concatNameArray = firstNameArray.concat(lastNameArray);
 console.log(concatNameArray);

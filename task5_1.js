@@ -11,19 +11,18 @@
 Якщо середня оцінка від 91 до 100 (включно), вивести "Відмінно".
  */
 
-let averageGrade = 101
+let averageGrade = 101;
 
-if (
-    typeof averageGrade !== "number" || averageGrade < 0 || averageGrade > 100) {
-    console.log("Недійсне значення. Значення оцінки повинно бути числом від 0 до 100.");
+if (typeof averageGrade !== 'number' || averageGrade < 0 || averageGrade > 100) {
+	console.log('Недійсне значення. Значення оцінки повинно бути числом від 0 до 100.');
 } else if (averageGrade < 60) {
-    console.log("Незадовільно");
+	console.log('Незадовільно');
 } else if (averageGrade <= 70) {
-    console.log("Задовільно");
+	console.log('Задовільно');
 } else if (averageGrade <= 80) {
-    console.log("Добре");
+	console.log('Добре');
 } else if (averageGrade <= 90) {
-    console.log("Дуже добре");
+	console.log('Дуже добре');
 } else {
-    console.log("Відмінно"); 
+	console.log('Відмінно');
 }

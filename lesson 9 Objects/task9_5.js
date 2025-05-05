@@ -4,11 +4,11 @@
 Зробіть деструктуризацію в циклі */
 
 const activeUsers = [
-    { username: "Editor", email: "Editor@test.ua", role: "Accountable Manager" },
-    { username: "Admin", email: "admin@test.ua", role: "Safety Manager" },
-    { username: "Reviewer", email: "reviewer@test.ua", role: "QA Manager" },
-    { username: "Reader", email: "reader@test.ua", role: "Cabin Crew" },
+	{ username: 'Editor', email: 'Editor@test.ua', role: 'Accountable Manager' },
+	{ username: 'Admin', email: 'admin@test.ua', role: 'Safety Manager' },
+	{ username: 'Reviewer', email: 'reviewer@test.ua', role: 'QA Manager' },
+	{ username: 'Reader', email: 'reader@test.ua', role: 'Cabin Crew' },
 ];
 for (const { username, email, role } of activeUsers) {
-    console.log(`Username: ${username}, Email: ${email}, role: ${role}`);
+	console.log(`Username: ${username}, Email: ${email}, role: ${role}`);
 }

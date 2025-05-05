@@ -10,22 +10,18 @@
 a handleOdd буде виводити текст “number is odd”
 Викличте функцію handleNum і передайте в якості аргументів довільне число і дві функції які ви створили раніше */
 
-
-
-
-
 function handleNum(number, evenCallBack, oddCallBack) {
-    if (number % 2 === 0) {
-        evenCallBack(number);
-    } else {
-        oddCallBack(number);
-    }
+	if (number % 2 === 0) {
+		evenCallBack(number);
+	} else {
+		oddCallBack(number);
+	}
 }
 function handleEven(number) {
-    console.log(`${number}: Number is even`);
+	console.log(`${number}: Number is even`);
 }
 function handleOdd(number) {
-    console.log(`${number}: Number is odd`);
+	console.log(`${number}: Number is odd`);
 }
 
 handleNum(1021, handleEven, handleOdd);

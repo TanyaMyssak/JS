@@ -6,12 +6,10 @@
 Фунція повинна викликатися, доки num не стане менше або рівне 0.
 Викличте вашу функцію з аргументом, наприклад, 5, щоб почати рекурсивний лічильник. */
 
-function countToZero(number) { 
-console.log (number)
-if (number >0)
-   {
-    countToZero (number - 1 );
-   }
+function countToZero(number) {
+	console.log(number);
+	if (number > 0) {
+		countToZero(number - 1);
+	}
 }
-countToZero(9)
-
+countToZero(9);
